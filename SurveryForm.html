@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+   </head>
+   <body>
+      <div class="container-fluid">
+         <form>
+            <div class="row">
+               <div class="col-md-4 col-sm-12">
+                  <h1 id="title">Survey Form</h1>
+                  <p id="description">Sample Form Using Bootstrap Form Controls</p>
+                  <div class="form-group">
+                     <label for="name" id="name-label">Name</label>
+                     <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="email" id="email-label">Email address</label>
+                     <input type="email" class="form-control" id="email" placeholder="Enter email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="number" id="number-label">Number</label>
+                     <input type="number" class="form-control" id="number" placeholder="Enter number between 1 and 5" required min="1" max="5">
+                  </div>
+                  <div class="form-group">
+                     <select class="form-control" id="dropdown">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                     </select>
+                  </div>
+                  <div class="radio">
+                     <label><input type="radio" name="radiochoice" value="one">Option 1</label>
+                  </div>
+                  <div class="radio">
+                     <label><input type="radio" name="radiochoice" value="two">Option 2</label>
+                  </div>
+                  <div class="checkbox">
+                     <label><input type="checkbox" value="one">Option 1</label>
+                  </div>
+                  <div class="checkbox">
+                     <label><input type="checkbox" value="two">Option 2</label>
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleTextarea">Example textarea</label>
+                     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
